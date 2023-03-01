@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(207, 217, 223, 0.5) 0%, rgba(226, 235, 240, 0.5) 100%), url(https://images.unsplash.com/photo-1672775666545-943990751c47?crop=faces%2Cedges&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc2NTY3NjY2&ixlib=rb-4.0.3&q=60&w=1200&auto=format&h=630&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-mode=normal&blend-alpha=10&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=000000);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 100px;
+    margin-bottom: 25px;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.head img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.head a{
+    font-size: 60px;
+    text-decoration: none;
+    color: #030303;
+    margin-top: 20px;
+    font-family: 'Crimson Text', serif;
+}
+
+
+.barras{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgb(0, 0, 0)
+}
+
+.menu{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: url(https://www.xtrafondos.com/wallpapers/vertical/montanas-en-bosque-minimalista-flat-3306.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+    box-shadow: 0 0 6px #030303;
+    transform: translate(110%);
+    transition: transform .3s ease-in-out;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.holamenu{
+    transform: translate(0);
+}
+
+.menu a{
+    color: #000000;
+    background-color: #ffffff71;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu a:hover{
+    color: #ff8800;
+    background-color: #ffffff;
+}
+
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color:#000000;
+    margin-bottom: 40px;
+    font-size: 40px;
+    
+}
+.subtitulo:hover{
+    text-shadow: 1px 2px 3px #000000;
+}
+.sec__div{
+    font-size: 25px;
+    transition: all 0.5s ease;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-image: url(https://www.teknofilo.com/wp-content/uploads/2017/01/Minimalist-smartphone-wallpapers_021.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+    
+.sec__div:hover{
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 1);
+}
+
+
+
+.sec__div-ul{
+    list-style-type: none;
+}
+
+.habi{
+    list-style: circle;
+}
+
+
+.divisor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont-div img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+footer{
+    background: #989898;
+    padding-bottom: 0.1px;
+}
+footer h3{
+    color: #ffffff;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+}
+.media-redes{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.media-redes-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;    
+}
+.media-redes-icon:hover{
+    background: #ffffff;
+    color: #989898;
+}
+.media-redes-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+@media screen and (max-width:800px){
+    .menu{
+        width: 60vw;
+    }
+    .titulo{
+        font-size: 50px;
+    }
+    .sec__div{
+        font-size: 20px;
+    }
+    .head img{
+        width: 150px;
+        height:150px ;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .menu{
+        width:65vw ;
+    }
+    .sec__div{
+        font-size: 13px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .divisor{
+        display: block
+    }
+    .cont-div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .img{
+        width: 90%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+    .footer-content h3{
+        font-size: 0px;
+
+    }
+    .media-redes{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .media-redes i{
+        margin-left: 0;
+    }
+    .media-redes-icon{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;  
+        
+    }
+}
+
+
+
+
